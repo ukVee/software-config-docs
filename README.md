@@ -1,4 +1,4 @@
-# softfig-docs
+# software-config-docs
 
 The documentation site for [soft-fig](https://github.com/ukVee/software-config-garden),
 built with [Astro Starlight](https://starlight.astro.build/). Kept as a separate
@@ -16,7 +16,7 @@ Work proceeds session by session; the paste-able prompts live in
 
 ```sh
 npm install
-npm run dev       # serves at http://localhost:4321/softfig-docs/
+npm run dev       # serves at http://localhost:4321/software-config-docs/
 ```
 
 `npm run build` writes the production site to `dist/`;

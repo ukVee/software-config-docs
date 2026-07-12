@@ -11,7 +11,8 @@ Last updated: 2026-07-12 (session 1)
 The documentation site for **soft-fig**, kept separate from the code repo
 ([ukVee/software-config-garden](https://github.com/ukVee/software-config-garden),
 which is public) so drafts stay private until launch. This repo becomes
-`ukVee/softfig-docs` (private) on GitHub.
+`ukVee/software-config-docs` (private) on GitHub; the Pages base path is
+`/software-config-docs`.
 
 Note for Claude sessions: this directory has its own Claude memory, separate from
 the garden's. The handoff prompts in `handoffs/` exist precisely to carry context

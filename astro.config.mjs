@@ -2,10 +2,10 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
-// GitHub Pages project hosting: https://ukvee.github.io/softfig-docs
+// GitHub Pages project hosting: https://ukvee.github.io/software-config-docs
 export default defineConfig({
   site: "https://ukvee.github.io",
-  base: "/softfig-docs",
+  base: "/software-config-docs",
   integrations: [
     starlight({
       title: "soft-fig",
