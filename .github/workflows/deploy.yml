@@ -1,0 +1,40 @@
+# Deploys the Starlight site to GitHub Pages.
+#
+# Manual trigger ONLY (workflow_dispatch) — do NOT add push/PR triggers.
+# The site must not auto-publish before launch; see PLAN.md "Hosting".
+# Note: on the GitHub Free plan, Pages cannot publish from a private repo at
+# all — going live means flipping the repo public, then running this workflow.
+
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build with Astro
+        uses: withastro/action@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

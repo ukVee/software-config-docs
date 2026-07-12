@@ -4,7 +4,7 @@
 > session starts by reading this file.** Update the session ledger at the bottom
 > before committing.
 
-Last updated: 2026-07-12 (planning session)
+Last updated: 2026-07-12 (session 1)
 
 ## What this repo is
 
@@ -138,7 +138,7 @@ Update status + date + one-line result as sessions complete.
 
 | # | Handoff | Scope | Status |
 |---|---|---|---|
-| 1 | handoffs/session-01-scaffold.md | Starlight scaffold, sidebar, stubs, gated deploy | pending |
+| 1 | handoffs/session-01-scaffold.md | Starlight scaffold, sidebar, stubs, gated deploy | done 2026-07-12 — scaffold moved to repo root, sidebar per IA, 26 stubs + splash, dispatch-only deploy.yml, build+dev verified |
 | 2 | handoffs/session-02-garden.md | Garden core pages (today, conventions, ownership, roadmap) | pending |
 | 3 | handoffs/session-03-claude-workflow.md | Working with Claude + starter prompts | pending |
 | 4 | handoffs/session-04-growlight.md | Growlight area | pending |
