@@ -4,7 +4,7 @@
 > session starts by reading this file.** Update the session ledger at the bottom
 > before committing.
 
-Last updated: 2026-07-12 (session 3)
+Last updated: 2026-07-12 (session 4)
 
 ## What this repo is
 
@@ -142,7 +142,7 @@ Update status + date + one-line result as sessions complete.
 | 1 | handoffs/session-01-scaffold.md | Starlight scaffold, sidebar, stubs, gated deploy | done 2026-07-12 — scaffold moved to repo root, sidebar per IA, 26 stubs + splash, dispatch-only deploy.yml, build+dev verified |
 | 2 | handoffs/session-02-garden.md | Garden core pages (today, conventions, ownership, roadmap) | done 2026-07-12 — today/conventions/make-it-your-own/vision-roadmap written from the product scaffold (ukv garden as worked example), deep-linked to code repo `main`, base-agnostic relative cross-links, build green |
 | 3 | handoffs/session-03-claude-workflow.md | Working with Claude + starter prompts | done 2026-07-12 — working-with-claude (root-open practice + alias, reads-native/writes-typed asymmetry, hard secrets/keys boundary) and starter-prompts (8-entry cookbook: decision/incident/note/inbox-triage/snapshot/staleness/new-area/route-a-question, each with the verb it fires + grow-your-own), grounded in the live softfig-mcp verb surface; build green |
-| 4 | handoffs/session-04-growlight.md | Growlight area | pending |
+| 4 | handoffs/session-04-growlight.md | Growlight area | done 2026-07-12 — overview (the curated-baton bet, backlog/protocol/baton-log/budgets, why a garden benefits, loop-never-merges), running (init/semi-auto start/growlightd fleet-of-one + arming via config, observe+steer table, daemon cycle relock, the two-way owes-list), customizing (backlog as main lever, repo-bound queues, session-policy budgets, device-scaled pacing, adapt-the-protocol) — grounded in growlight specs + verified CLI surface, honest pre-release framing; build green |
 | 5 | handoffs/session-05-start-guides.md | Install, first-garden tutorial, task guides | pending |
 | 6 | handoffs/session-06-reference.md | CLI, MCP verbs, schema, config, crypto | pending |
 | 7 | handoffs/session-07-internals.md | Codebase architecture + subsystem pages | pending |
