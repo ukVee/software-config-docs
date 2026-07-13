@@ -3,6 +3,9 @@ title: Why soft-fig
 description: "The reasoning for the project."
 ---
 
-<!-- TODO: written in session 8 -->
-
-*Stub — The reasoning for the project. Written in session 8.*
+:::note[Coming soon]
+This page is written in the author's own voice and is still being drafted. In
+the meantime, [what a garden is](../../garden/today/) covers the core idea, and
+[the vision and roadmap](../../garden/vision-roadmap/) lays out where it's
+headed.
+:::

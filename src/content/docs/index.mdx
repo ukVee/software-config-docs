@@ -5,36 +5,73 @@ template: splash
 hero:
   tagline: One tool for the files that describe your machine.
   actions:
+    - text: Get started
+      link: start/install/
+      icon: right-arrow
     - text: What a garden is
       link: garden/today/
-      icon: right-arrow
+      icon: open-book
+      variant: minimal
     - text: Source on GitHub
       link: https://github.com/ukVee/software-config-garden
       icon: external
       variant: minimal
 ---
 
-{/* TODO: written in session 1 (stub); final polish in session 9 */}
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-soft-fig is one tool for the files that describe your machine: a **memory
-garden**, a **dotfile manager**, an **encryption-at-rest store**, and a
-**version control system** — sharing one config and one CLI, instead of four
-tools stitched together.
+A **garden** is the set of files that describe a machine — how it's configured,
+what's installed, why a choice was made, what broke and how it got fixed.
+soft-fig treats that as one first-class object: a **memory garden**, a
+**dotfile manager**, an **encryption-at-rest store**, and a **version control
+system**, sharing one config and one CLI instead of four tools stitched
+together. The garden is the product; everything else soft-fig ships — Growlight
+included — exists to serve it.
 
-:::caution[Work in progress]
-soft-fig is a single-author work in progress, not a released tool — and these
-docs are being written section by section, so most pages are still stubs. The
-[code repository](https://github.com/ukVee/software-config-garden) is the
-current source of truth.
+:::caution[Single-author work in progress]
+soft-fig is a single-author work in progress, not a released tool. The engine,
+the Keeper surfaces (CLI, MCP, TUI), the static deploy spine, read-only
+cross-device sync, and the Growlight work loop are built and self-hosting;
+template rendering, a general GUI, and packaging are not. See
+[where the code is today](internals/status/). The
+[code repository](https://github.com/ukVee/software-config-garden) remains the
+source of truth.
 :::
 
 ## Where to go
 
-- **New here?** Start with [what a garden is](garden/today/), then
-  [install soft-fig](start/install/) and
-  [grow your first garden](start/first-garden/).
-- **Curious why this exists?** Read [the story](story/why/).
-- **Looking something up?** Head to the [CLI reference](reference/cli/) or the
-  rest of the Reference section.
-- **Want the internals?** The Codebase section starts at
-  [Architecture](internals/architecture/).
+<CardGrid>
+  <LinkCard
+    title="What a garden is"
+    href="garden/today/"
+    description="The core idea and where the product stands today."
+  />
+  <LinkCard
+    title="Install & grow your first garden"
+    href="start/install/"
+    description="Build from source, then onboard a garden end to end."
+  />
+  <LinkCard
+    title="Working with Claude"
+    href="garden/working-with-claude/"
+    description="The root-open practice, the alias, and a starter-prompt cookbook."
+  />
+  <LinkCard
+    title="Growlight"
+    href="growlight/overview/"
+    description="The autonomous work loop the garden ships as a tool."
+  />
+  <LinkCard
+    title="CLI reference"
+    href="reference/cli/"
+    description="The full softfig command surface, plus MCP verbs and schema."
+  />
+  <LinkCard
+    title="The codebase"
+    href="internals/architecture/"
+    description="Crates, the daemon, the FUSE view, the ciphertext VCS, the vault."
+  />
+</CardGrid>
+
+Curious how this started? [The story](story/why/) — the reasoning and how the
+idea grew — is being written in the author's own voice.
